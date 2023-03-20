@@ -69,7 +69,7 @@ If you have any problem, feel free to open a Issue. Will be happy to help.
 
 ### Training Result.
 
-I have uploaded the model weights after training on  `vit_base_patch16_224` run on TPU. 
+If you want to test the mode, find the model weights after training on  `vit_base_patch16_224` run on TPU at this [link](https://drive.google.com/file/d/1OIJQtnbBM8Ii866mibH4AZ6h5wwxE-P2/view?usp=share_link) 
 
 The metrics plot will soon be updated in this repository.
 
