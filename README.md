@@ -69,7 +69,7 @@ If you have any problem, feel free to open a Issue. Will be happy to help.
 
 ### Training Result.
 
-I have uploaded the mdoel weights after training on  `vit_base_patch16_224` run on TPU. 
+I have uploaded the model weights after training on  `vit_base_patch16_224` run on TPU. 
 
 The metrics plot will soon be updated in this repository.
 
