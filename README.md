@@ -1,7 +1,7 @@
 <h1 align='center'>Image Classification using Deep Learning </h1>
 
 <p align="center">
-<img src="assets/title.jpg" alt="Image Visualisation">
+<img src="assets/title.png" alt="Image Visualisation">
 </p>
 
 <p align="center">
