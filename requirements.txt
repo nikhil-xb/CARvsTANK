@@ -9,4 +9,3 @@ torch
 torchvision
 albumentations
 sklearn
-torch_xla
