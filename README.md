@@ -19,7 +19,7 @@
 This repository contains the code for an image classification task for [dataset](https://www.kaggle.com/datasets/gatewayadam/cars-and-tanks-image-classification).
 The main task is to classify whether the image is of either a Car or a Tank.
 
-I have also made a [training notebook](https://www.kaggle.com/code/nikhilxb/cartank/notebook) trained on GPU-T4x2.
+I have also made a [training notebook](https://www.kaggle.com/code/nikhilxb/classification-using-multi-model-trainer-on-torch/notebook) trained on GPU-T4x2.
 The codes in this repository is for training the model on TPUs.
 
 ## Data
