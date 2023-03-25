@@ -93,5 +93,5 @@ In the above code the `_run()` is where the individual results are returned and 
 * For some useful tips for running PyTorch on TPU, I would recommend you go through this discussion on Kaggle. 👇
 https://www.kaggle.com/competitions/jigsaw-multilingual-toxic-comment-classification/discussion/159723
 
-
+**If you wish to make any enhancements or changes to the existing code, you are humbly invited to do so by raising a pull request**
 
