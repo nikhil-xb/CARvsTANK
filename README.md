@@ -1,4 +1,6 @@
-<h1 align='center'>Image Classification using Deep Learning </h1>
+<h1 align='center'>PyTorch Trainer Baseline + TPU Integration </h1>
+
+<p align= "center"><b> I hope you find this repository useful. If you do, please start ⭐ this repository.</b></p>
 
 <p align="center">
 <img src="assets/title.png" alt="Image Visualisation">
@@ -56,7 +58,7 @@ Run the below command for installing the required dependencies.
 ```shell
 $ pip install -r requirements.txt
 ```
-### Training the model
+### 3. Training the model
 If you have the above steps right then, running the train.py should not produce any errors. 
 To run the code, open the terminal and change the directory level same as `train.py` file. 
 Now run the `train.py` file.
@@ -67,12 +69,29 @@ $ python train.py
 You should start seeing the progress bar, on few seconds at the beginning of training.
 If you have any problem, feel free to open a Issue. Will be happy to help.
 
-### Training Result.
+### 4. Training Result.
 
 If you want to test the mode, find the model weights after training on  `vit_base_patch16_224` run on TPU at this [link](https://drive.google.com/file/d/1OIJQtnbBM8Ii866mibH4AZ6h5wwxE-P2/view?usp=share_link) 
 
 Below shows the metrics plot on GPU. 
 ![Metrics](assets/results.png)
 
-**I hope you find this repository useful. If you do, please start ⭐ this repository.**
+#### Note:  
+* When training on TPU, we make use of multiple cores and we must merge the scores from different cores.
+Run the below code:
+
+```shell
+if __name__=="__main__":
+  def _map_fn(rank,flags):
+    torch.set_default_tensor_type("torch.FloatTensor")
+    a= _run()
+  FLAGS= {}
+  xmp.spawn(_map_fn,args=(FLAGS,),nprocs=8, start_method="fork")
+```
+In the above code the `_run()` is where the individual results are returned and `_map_fn()` is used to collect them.
+
+* For some useful tips for running PyTorch on TPU, I would recommend you go through this discussion on Kaggle. 👇
+https://www.kaggle.com/competitions/jigsaw-multilingual-toxic-comment-classification/discussion/159723
+
+
 
